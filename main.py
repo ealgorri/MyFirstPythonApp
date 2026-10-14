@@ -108,7 +108,7 @@ def main():
         canvas.create_oval(x - ROBOT_R, y - ROBOT_R, x + ROBOT_R, y + ROBOT_R, fill=color)
         canvas.create_text(x, y - ROBOT_R - 12, text="v = {:.0f} px/s".format(robot["v"]))
         if robot["crashed"]:
-            canvas.create_text(CANVAS_W / 2, 20, text="CRASH!", fill="red", font=("Arial", 16, "bold"))
+            canvas.create_text(CANVAS_W / 2, 20, text="CRASH !!!", fill="red", font=("Arial", 16, "bold"))
 
     def tick():
         """Timer callback: sensor node publishes, then the physics moves the robot."""
